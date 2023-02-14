@@ -1,4 +1,11 @@
 <app-header></app-header>
 <div class = "grid">
-  <app-card *ngFor="let card of ArregloTarjetas"></app-card>
+  <app-card [dataentrante]="card" *ngFor="let card of ArregloTarjetas" ></app-card>
+</div>
+<div clas="container">
+  <div class="row">
+    <h3>el nombre de la variable es {{nombre}}</h3>
+    <br>
+    <input type="text" class="form-control" [ placeholder ]="textPlaceHolder" >
+  </div>
 </div>
